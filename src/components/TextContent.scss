@@ -1,0 +1,118 @@
+$SoftBlue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$DarkBlue: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+.text-content {
+    width: 100%;
+    height: 50%;
+
+    .title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: $White;
+        margin: 2rem auto;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    .text-card {
+        color: $SoftBlue;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin: 2rem auto;
+    }
+
+    .price-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+
+        .price {
+            font-weight: 600;
+            color: $Cyan;
+        }
+
+        .price::before{
+            display: inline-block;
+            content: '';
+            background-image: url('../assets/images/icon-ethereum.svg');
+            background-repeat: no-repeat;
+            background-position: top;
+            width: 1.3rem;
+            height: 2rem;
+            vertical-align: middle;
+            margin-right: 1rem;
+            transition: 1s ease-in-out;
+            
+        }
+
+        .days {
+            color: $SoftBlue;
+        }
+
+        .days::before{
+            display: inline-block;
+            content: '';
+            background-image: url('../assets/images/icon-clock.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 2rem;
+            height: 2rem;
+            vertical-align: top;
+            margin-right: 0.5rem;
+            transition: 1s ease-in-out;
+        }
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: $SoftBlue;
+        margin-bottom: 2rem;
+    }
+
+    .coin-creator {
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        img {
+            height: 4rem;
+            outline: 1px solid $White;
+            border-radius: 50%;
+        }
+
+        .creator {
+            font-size: 1.8rem;
+            margin-left: 2rem;
+            color: $SoftBlue;
+
+            a {
+                text-decoration: none;
+                color: $White;
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                    color: $Cyan;
+                }
+            }
+        }
+    }
+}
+
+@media(hover: hover) {
+
+    .title:hover {
+        color: $Cyan;
+    }
+
+    .price:hover::before,
+    .days:hover::before {
+        transform: rotate(360deg);
+        transition: 1s ease-in-out;
+    }
+}
+

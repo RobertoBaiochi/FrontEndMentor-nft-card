@@ -1,0 +1,21 @@
+$Cyan: hsl(178, 100%, 50%);
+$White: hsl(0, 0%, 100%);
+
+.attribution { 
+    font-size: 1.5rem; 
+    text-align: center; 
+    color: $White;
+
+    a { 
+        color: $Cyan; 
+        text-decoration: none;
+        transition: 0.4s ease-in-out;
+    }
+
+}
+
+@media(hover: hover) {
+    a:hover {
+        color: rgb(241, 125, 47);
+    }
+}
