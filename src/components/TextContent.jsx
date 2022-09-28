@@ -17,7 +17,7 @@ function TextContent() {
 
             <div className='coin-creator'>
                 <img src={AvatarCreator} alt="Avatar picture" aria-hidden={true} />
-                <p className='creator'>Creation of <a href='#'>Jules Wyvern</a></p>
+                <p className='creator'>Creation of <a href='#void'>Jules Wyvern</a></p>
             </div>
         </div>
      );
